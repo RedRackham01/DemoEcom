@@ -63,7 +63,7 @@ const PersonalDetails = ({ values, handleNext }) => {
             />
             <Box display="flex" alignItems="center" sx={{ gridColumn: "span 2" }}>
               <FormControl fullWidth>
-                <InputLabel id="gender">Gender</InputLabel>
+                <InputLabel sx={{color:"white"}}id="gender">Gender</InputLabel>
                 <Select labelId="gender" id="gender" label="Role" name="gender" value={values.gender} onChange={(event) => setFieldValue("gender", event.target.value)}>
                   <MenuItem value={"Male"}>Male</MenuItem>
                   <MenuItem value={"Female"}>Female</MenuItem>

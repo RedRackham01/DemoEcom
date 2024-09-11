@@ -7,6 +7,7 @@ import PaymentDetails from "./../components/MultiForm/PaymentDetails.jsx";
 import Consent from "./../components/MultiForm/Consent.jsx";
 import "../styles/Forms.css";
 import { useNavigate } from "react-router-dom";
+import DisplayForm from "../components/MultiForm/DisplayForm.jsx";
 
 const steps = ["Personal Details", "Address", "Payment Details", "Consent"];
 
@@ -75,42 +76,13 @@ const MultiStepForm = () => {
           </Box>
         </>
       ) : (
-        <Box className="form">
-          <Typography variant="h5">Form Details</Typography>
-          <Box>
-            <Typography variant="h6">Personal Details</Typography>
-            <Typography>First Name: {formValues.firstName}</Typography>
-            <Typography>Last Name: {formValues.lastName}</Typography>
-            <Typography>Gender: {formValues.gender}</Typography>
-            <Typography>Age: {formValues.age}</Typography>
-            <Typography>Email: {formValues.email}</Typography>
-          </Box>
-          <Box>
-            <Typography variant="h6">Address</Typography>
-            <Typography>Pincode: {formValues.pincode}</Typography>
-            <Typography>Address: {formValues.address}</Typography>
-            <Typography>City: {formValues.city}</Typography>
-          </Box>
-          <Box>
-            <Typography variant="h6">Payment Details</Typography>
-            <Typography>Card Number: {formValues.cardNumber}</Typography>
-            <Typography>Expiry Date: {formValues.expiryDate}</Typography>
-          </Box>
-          <Box>
-            <Typography variant="h6">Consent</Typography>
-            <Typography>Consent Given: {formValues.consent ? "Yes" : "No"}</Typography>
-          </Box>
-          <Button
-            onClick={() => {
-              setVisible(false);
-              navigate("*");
-            }} // Hide details and restart form
-            variant="contained"
-            color="primary"
-            sx={{ mt: 2 }}>
-            Exit
-          </Button>
-        </Box>
+        <DisplayForm
+          values={formValues}
+          handleClick={() => {
+            setVisible(false);
+            navigate("*");
+          }}
+        />
       )}
     </Layout>
   );

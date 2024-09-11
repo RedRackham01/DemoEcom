@@ -1,4 +1,4 @@
-import { Box, IconButton, InputBase, Typography, Select, MenuItem, FormControl } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FlexBetween from "../FlexBetween.jsx";
 import { useNavigate } from "react-router-dom";
@@ -18,15 +18,14 @@ const Navbar = () => {
             "&:hover": {
               cursor: "pointer",
             },
-          }}
-          onClick={() => navigate("/")}>
+          }}>
           DemoEcom
         </Typography>
       </Box>
       <Box display="flex" alignItems="center" justifyContent="center" gap="0.5rem">
-        <Typography fontSize="0.8rem" color="white">
-          Sayanchatt
-        </Typography>
+        <Button onClick={() => navigate("/")} variant="outlined" color="primary">
+          Go Back
+        </Button>
       </Box>
     </FlexBetween>
   );

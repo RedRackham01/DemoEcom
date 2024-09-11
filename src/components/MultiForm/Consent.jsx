@@ -15,9 +15,9 @@ const Consent = ({ values, handleBack, handleSubmit }) => {
       }}>
       {({ values, errors, touched, handleBlur, handleChange, handleSubmit, setFieldValue, resetForm }) => (
         <Form>
-          <Box display="grid" gap="30px" gridTemplateColumns="repeat(4, minmax(0, 1fr))">
-            <Typography>I consent to receive advertisements and promotional materials.</Typography>
-            <Field name="consent" type="checkbox" onChange={(e) => setFieldValue("consent", e.target.checked)} checked={values.consent} />
+          <Box display="flex" mb={5}>
+            <Typography sx={{ color: "#b0b0ae" }}>I consent to receive advertisements and promotional materials.</Typography>
+            <Field name="consent" type="checkbox" onChange={(e) => setFieldValue("consent", e.target.checked)} checked={values.consent} sx={{ "& .MuiSvgIcon-root": { fontSize: 28 } }} />
             {touched.consent && errors.consent && <Typography color="error">{errors.consent}</Typography>}
           </Box>
 

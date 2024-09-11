@@ -1,0 +1,26 @@
+.details {
+  margin-top: 5rem;
+  padding: 2rem;
+  padding-inline: 5rem;
+  margin-inline: auto;
+  color: #b0b0ae;
+  width: 70%;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  box-shadow: 2px 2px 20px 1px black;
+  border: 1px solid #b0b0ae;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.details h5 {
+  font-weight: 700;
+  margin-inline: auto;
+}
+.details h6 {
+  font-weight: 500;
+}
+.details .btn {
+  width: 200px;
+  align-self: center;
+}
