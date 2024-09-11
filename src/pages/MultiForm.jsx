@@ -80,7 +80,7 @@ const MultiStepForm = () => {
           values={formValues}
           handleClick={() => {
             setVisible(false);
-            navigate("*");
+            navigate("/");
           }}
         />
       )}
