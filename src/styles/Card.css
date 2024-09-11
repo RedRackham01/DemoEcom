@@ -1,0 +1,13 @@
+.card-container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.home-page-card {
+  background-color: #17181c !important;
+  color: #b3c7ff !important;
+  border: 1px solid #b0b0ae !important;
+}

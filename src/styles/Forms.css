@@ -1,0 +1,28 @@
+.stepper {
+  margin-top: 2rem;
+  margin-inline: 10rem;
+  width: 80%;
+  background-color: #b0b0ae50;
+  padding: 10px;
+  border-radius: 20px;
+}
+.form {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.form-list {
+  width: 50%;
+  padding: 5rem;
+  padding-bottom: 2rem;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  box-shadow: 2px 2px 20px 1px;
+  border: 1px solid #b0b0ae;
+}
+
+.btn {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+}
